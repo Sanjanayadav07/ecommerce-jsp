@@ -24,21 +24,40 @@ This is a simple full-stack e-commerce web application built using **JSP**, **Se
 - Tools: Eclipse IDE, JDBC, Git
 
 ---
-
-## 📁 Project Structure
+```
 E-Commerce/
 ├── src/
-│ └── com/ecommerce/
-│ ├── connection/
-│ ├── dao/
-│ ├── model/
-│ └── servlet/
+│   └── com/
+│       └── ecommerce/
+│           ├── connection/          # DBConnection.java
+│           ├── dao/                # ProductDAO.java, UserDAO.java, OrderDAO.java, etc.
+│           ├── model/              # Product.java, User.java, Order.java, etc.
+│           └── servlet/            # LoginServlet.java, RegisterServlet.java, AddToCartServlet.java, etc.
+│
 ├── WebContent/
-│ ├── css/, images/
-│ ├── index.jsp, login.jsp, cart.jsp, etc.
-│ └── admin_dashboard.jsp, add_product.jsp, etc.
-├── pom.xml (if using Maven)
-
+│   ├── css/                        # style.css, admin.css, etc.
+│   ├── images/                     # product images like red_tshirt.jpg, blue_jeans.jpg, etc.
+│   ├── index.jsp                   # Home page
+│   ├── login.jsp                   # User/Admin login page
+│   ├── register.jsp                # User registration page
+│   ├── cart.jsp                    # Shopping cart
+│   ├── product.jsp                 # Product listing
+│   ├── checkout.jsp               # Checkout process
+│   ├── order_history.jsp           # User order history
+│   ├── forgot_password.jsp         # Password recovery
+│   ├── main_login.jsp              # Unified login page for User/Admin
+│   └── admin/
+│       ├── admin_dashboard.jsp     # Admin dashboard overview
+│       ├── add_product.jsp         # Add new product
+│       ├── edit_product.jsp        # Edit existing product
+│       ├── view_orders.jsp         # View all orders
+│       └── manage_users.jsp        # View/manage users
+│
+├── pom.xml                         # (if using Maven)
+├── .project                        # Eclipse project file
+├── .classpath                     # Eclipse classpath file
+└── README.md                       # (Optional: project description & setup)
+```
 
 ---
 
