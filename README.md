@@ -24,6 +24,7 @@ This is a simple full-stack e-commerce web application built using **JSP**, **Se
 - Tools: Eclipse IDE, JDBC, Git
 
 ---
+## 📁 Project Structure
 ```
 E-Commerce/
 ├── src/
